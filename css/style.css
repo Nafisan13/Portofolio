@@ -1,0 +1,298 @@
+/* Head */
+:root {
+    --Bg: linear-gradient(-75deg ,#000915, #0b2751);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 3000px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--Bg);
+    font-family: 'Lato', sans-serif;
+}
+/* Header */
+.header {
+    position: fixed;
+    z-index: 1;
+    padding-right: 84.6rem;
+    padding-bottom: 6px;
+    background-color: rgba(0, 0, 0, 0.493);
+}
+.kepala {
+    padding-bottom: 8px;
+    animation: animasi 2s;
+    transition: 2s;
+    top: -100%;
+}
+/* logo nama*/
+.kepala .nama-logo {
+    padding: 1rem 0 0 6rem;
+    padding-bottom: 1rem;
+    transition: 2s;
+    animation: animasi 2s;
+    top: -100%;
+}
+.kepala .nama-logo a {
+    cursor: default;
+    color: rgb(0, 229, 255);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+
+.kepala .nama-logo a span {
+    color: #fff;
+}
+/* menu */
+.menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1.4rem;
+}
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    padding-bottom: 3px;
+    padding-right: 4rem;
+    display: inline-block;
+}
+
+.menu a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgb(0, 108, 161);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+.menu a:hover::after{
+    transform: scaleX(1);
+}
+
+/* logo */
+.isi {
+    display: flex;
+    padding-top: 8rem;
+}
+
+.logo {
+    position: absolute;
+    right: 0;
+}
+.logo img {
+    border-radius: 50%;
+    width: 35%;
+    height: 35%;
+    border: 8px #fff;
+    margin-top: 9rem;
+    animation: ani 3s;
+    box-shadow: 2px 1px 20px rgba(0, 123, 255, 0.505);
+    -webkit-animation-name: rgb-web;
+    animation-name: rgb;
+    -webkit-animation-duration: 25s;
+	animation-duration: 25s;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+/* rgb */
+@-webkit-keyframes rgb-web {
+    0% {
+        box-shadow: 2px 1px 100px 10px rgba(0, 123, 255, 0.505);
+    }
+    35% {
+        box-shadow: 2px 1px 100px 10px rgba(255, 0, 247, 0.505);
+    }
+    65% {
+        box-shadow: 2px 1px 100px 10px rgba(255, 0, 0, 0.505);
+    }
+    100% {
+        box-shadow: 2px 1px 100px 10px rgba(0, 255, 47, 0.505);
+    }
+}
+@keyframes rgb {
+    0% {
+        box-shadow: 2px 1px 100px 10px rgba(0, 123, 255, 0.505);
+    }
+    35% {
+        box-shadow: 2px 1px 100px 10px rgba(255, 0, 247, 0.505);
+    }
+    65% {
+        box-shadow: 2px 1px 100px 10px rgba(255, 0, 0, 0.505);
+    }
+    100% {
+        box-shadow: 2px 1px 100px 10px rgba(0, 255, 47, 0.505);
+    }
+}
+
+
+/* key ani */
+@keyframes ani {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+/* kata-main */
+.kata-main {
+    position: absolute;
+    margin-top: 6rem;
+    color: #fff;
+}
+.kata-main h1, .kata-main h3 {
+    margin-left: 20rem;
+    margin-bottom: 0.5rem;
+}
+
+.kata-main p {
+    margin-left: 17rem;
+    margin-bottom: 0.5rem;
+}
+.kata-main .detail {
+    margin-left: 17rem;
+    margin-bottom: 7rem;
+}
+/* button */
+.kata-main button {
+    margin-left: 25rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.619);
+    background-color:rgb(0, 147, 220);
+    padding: 1rem;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'italic';
+}
+.kata-main button:hover {
+    color:#fff;
+    background-color: rgb(0, 80, 126);
+}
+/* selengkapnya */
+.p-selengkapnya {
+    position: fixed;
+}
+.selengkapnya {
+    display: none;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    color: black;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.selengkapnya h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 0.4rem;
+}
+.selengkapnya p {
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: large;
+}
+/* isi ke 2 */
+.isike2 {
+    background-color: #fff;
+    margin-top: 40rem;
+}
+
+
+
+
+/* Hp */
+@media (max-width: 540px) {
+    body {
+        font-size: 2px;
+        background-color: var(--Bg);
+    }
+    .isi {
+        display: relative;
+        font-size: 10px;
+    }
+    .logo {
+        width: 70%;
+        padding-left: 4rem;
+        right: -0.5rem;
+        top: 1rem;
+    }
+    .kata-main h1 {
+        margin-left: 5.5rem;
+        padding-bottom: 1rem;
+        margin-top: 6rem;
+    }
+    .kata-main h3 {
+        margin-left: 5.5rem;
+    }
+    .kata-main p {
+        margin-left: 2.4rem;
+        margin-bottom: 0.5rem;
+    }
+    .kata-main .detail {
+        margin-left: 2.4rem;
+        margin-bottom: 3rem;
+    }
+    .kata-main button {
+        margin-left: 6rem;
+        border: none;
+        border-radius: 5px;
+        box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.619);
+        background-color:rgb(0, 147, 220);
+        padding: 1rem;
+        cursor: pointer;
+        color: #fff;
+        font-size: 1rem;
+        font-family: 'italic';
+    }
+    .header {
+        padding-right: 15rem; 
+    }
+    .menu {
+        position: absolute;
+        top: 0.3rem;
+        margin: 2px;
+        margin-right: 3rem;
+        font-size: 2px;
+    }
+    .menu a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 2px;
+        padding-bottom: 3px;
+        padding-right: 0.4rem;
+        display: inline-block;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    .kepala .nama-logo a {
+        cursor: default;
+        color: rgb(0, 229, 255);
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    .kepala .nama-logo {
+        padding: 1rem 0 0 1rem;
+        padding-bottom: 1rem;
+        transition: 2s;
+        animation: animasi 2s;
+        top: -100%;
+    }
+}
